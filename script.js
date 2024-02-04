@@ -116,8 +116,8 @@ function handleClick(e) {
         }
     }
 
-    key.innerText = e.key;
-    keyCode.innerText = e.keyCode;
+    key.innerText = e.target.innerText;
+    keyCode.innerText = e.target.innerText.charCodeAt(0);
 
     animation(e.key);
 }
